@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+header {
+  background: #263238;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+header h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+header p {
+  color: #d7dee2;
+}
+
+main {
+  width: 90%;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  margin: 15px 0 10px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  margin: 7px 0;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+button {
+  background: #1976d2;
+  color: white;
+  border: none;
+  padding: 11px 18px;
+  margin: 10px 5px 10px 0;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.create-button {
+  background: #2e7d32;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.delete {
+  background: #d32f2f;
+}
+
+.question-list {
+  background: #f1f5f9;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+.quiz-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 12px 0;
+  border-radius: 8px;
+}
+
+.quiz-item h3 {
+  margin: 0;
+}
+
+.quiz-item p {
+  color: #666;
+  margin-top: 5px;
+}
+
+.quiz-question {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.quiz-question label {
+  display: block;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.quiz-question input {
+  width: auto;
+  margin-right: 10px;
+}
+
+.result {
+  background: #e8f5e9;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+@media (max-width: 600px) {
+  .quiz-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .quiz-item div:last-child {
+    margin-top: 10px;
+  }
+
+  header h1 {
+    font-size: 26px;
+  }
+}
